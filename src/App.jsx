@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
-import './styles/App.css'
+import './styles/App.scss'
 // importing components
 import Form from './components/Form'
 import TodoList from './components/TodoList'
@@ -44,7 +44,6 @@ function App() {
       localStorage.setItem("todos", JSON.stringify([]));
     }else{
       let todoLocal = JSON.parse(localStorage.getItem("todos"));
-      console.log(todoLocal)
       setTodos(todoLocal)
     }
   }
